@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #7a62ff;
+    --secondary: #0000;
+    --fourth: #342c64;
+    --third: #443c84;
+    --fifth: #04041c;
+}
+
+body {
+    background-image: url(./pictures/backgroundImage.jpg);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+}
+
+nav h1 {
+    font-size: 3rem;
+    color: var(--primary);
+    font-family: Arial;
+}
+
+nav h1 span {
+    color: var(--secondary);
+    font-family: arial;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;;
+}
+
+
+.navbar-a {
+    display: flex;
+    text-decoration: none;
+}
+
+.navbar-a i {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10rem;
+}
+
+.navbar-nav a {     
+    font-family: arial;
+    font-size: 1.5rem;
+    color: #000000;
+    text-shadow: 
+    -1px -1px 0 #ffffff,  
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffffff,
+    1px 1px 0 #ffffff;;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.navbar-nav a:hover {
+    color: var(--primary);
+}
+
+
+.navbar-extra {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-extra a {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+h2 {
+    color: #ffff;
+    font-family: arial;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+.container {
+    display: flex;
+    width: max-content ;
+    gap: 0.1rem;
+}
+
+img {
+    width: 200px;
+    height: 300px;
+}
+
+.horizontal-scroll {
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-color: transparent transparent;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+figcaption {
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.item {
+    width: 250px;
+    /* aspect-ratio: 11/16; */
+    position: relative;
+    overflow: hidden;
+}
+
+.item figcaption {
+    position: absolute;
+    bottom: -3 rem;
+    background-color: rgba(0, 0, 0, 0.50);
+    padding: 1rem;
+    width: 12.5rem;
+    text-align: left;
+}
+
+.item:hover figcaption {
+    bottom: 0;
+}
+
+#hamburger-menu {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 468px) {
+    nav {
+        size-adjust: 105%;
+    }
+
+    .navbar-a h1 {
+        font-size: 105%;
+    }
+
+    .navbar-a i {
+        font-size: 80%;
+    }
+
+    .navbar-nav a {
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-a h1 {
+        font-size: 125%;
+    }
+
+    .navbar-a i {
+        font-size: 100%;
+    }
+
+    .navbar-nav a {
+        font-size: 95%;
+    }
+}
+
+marquee {
+    background-image: linear-gradient(45deg, blue, black, gray);
+}
+
+.marquee {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-decoration: none;
+    font-family: arial;
+}
+
+.marquee span {
+    color: red;
+}
+
+.netflix-logo {
+    width: 10rem;
+    height: 5rem;
+}
+
+.crunchyroll-logo {
+    width: 15rem;
+    height: 3.5rem;
+}
