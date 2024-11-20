@@ -5,11 +5,9 @@
 }
 
 :root {
-    --primary: #7a62ff;
-    --secondary: #0000;
-    --fourth: #342c64;
-    --third: #443c84;
-    --fifth: #04041c;
+    --primary : #00111A;
+    --secondary: #48C8AF;
+    --textColor: #393E46;
 }
 
 body {
@@ -18,15 +16,26 @@ body {
 
 nav {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     justify-content: space-between;
     align-items: center;
     padding: 1.2rem;
+    background: rgba(0, 17, 26, 0.5);
+    z-index: 99999;
 }
 
 nav h1 {
     font-size: 3rem;
     color: var(--primary);
     font-family: Arial;
+    text-shadow: 
+    -1px -1px 0 #ffffff,  
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;;
 }
 
 nav h1 span {
@@ -71,7 +80,12 @@ nav h1 span {
 }
 
 .navbar-nav a:hover {
-    color: var(--primary);
+    color: var(--secondary);
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;;
 }
 
 
@@ -83,6 +97,10 @@ nav h1 span {
 .navbar-extra a {
     font-size: 1.5rem;
     color: #000;
+}
+
+main {
+    margin: 5rem;
 }
 
 h2 {
@@ -100,6 +118,10 @@ h2 {
 img {
     width: 200px;
     height: 300px;
+}
+
+img:hover {
+    filter: opacity(50%);
 }
 
 .horizontal-scroll {
@@ -175,7 +197,7 @@ figcaption {
 }
 
 marquee {
-    background-image: linear-gradient(45deg, blue, black, gray);
+    background-image: linear-gradient(45deg, rgba(0, 0, 255, 0.5), rgb(0, 0, 0), rgb(128, 128, 128));
 }
 
 .marquee {
