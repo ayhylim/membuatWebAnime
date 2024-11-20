@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/
+        bootstrap.min.css">
+        <script src="js/bootstrap.min.js"></script>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <style>
+            /*Gaya Umum*/
+            *,
+            :root {
+            --primary : #00111A;
+            --secondary: #48C8AF;
+            --textColor: #393E46;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                background-color: var(--primary);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                margin: 0;
+            }
+            .container{
+                background-color: var(--primary);
+                padding: 30px;
+                border-radius: 5px;
+                box-shadow: 10px 2px 5px 10px rgba(0,0,0.1);
+                width: 350px;
+            }
+            h1{
+                color: #fff;
+                font-family: roboto;
+                text-align: center;
+                margin-bottom: 20px;    
+            }
+
+            /*Gaya Label dan Input*/
+            label{
+                color: #fff;
+                display: block;
+                margin-bottom: 5px;
+                text-shadow: 
+                -1px -1px 0 #000,  
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;;
+            }
+            input[type="email"],
+            input[type="password"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ddd;
+                border-radius: 3px;
+                box-sizing: border-box;
+            }
+            /*Gaya Tombol*/
+            button[type="submit"] {
+                background-color: var(--secondary);
+                color: #000;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+                width: 100%;
+                margin: 0 0 1rem 0;
+            }
+            button[type="submit"]:hover {
+                color: #fff;
+                background-color: #000;
+            }
+            </style>
+            </head>
+            <body>
+                <div class="container">
+                    <h1>Login</h1>
+                    <form action="login.php"
+                        method="post">
+                        <label for="email_user">Email</label>
+                        <input type="email" id="email_user"
+                        name="email_user"required>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <button type="submit"
+                        name="login">Login</button>
+                        <a href="./forgotPassword.html"
+                        class="text-muted" style="color: #fff; text-decoration: none; " >Forgot password?</a>
+                        <p class="mt-3" style="color: #fff;" >Don't Have an Account?
+                            <a href="register.html" style="color: #fff; text-decoration: none; " >Sign up</a>
+                        </p>
+                        </form>
+                </div>
+            </body>
+</html>
